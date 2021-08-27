@@ -1,4 +1,0 @@
-AuthUserFile "/services/users/zfh3/hoilat/www/space1.kuittinen.cc/.htaclu"
-AuthName Members
-AuthType Basic
-Require valid-user

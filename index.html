@@ -18,18 +18,17 @@
 		}
 
 		#canvas {
-   padding: 0;
-   margin: auto;
-   display: block;
-   width: 800 px;
-   height: 600 px;
    position: absolute;
-   top: 0;
-   bottom: 0;
-   left: 0;
-   right: 0;
+   top: 50 % ;
+   left: 50 % ;
+   transform: translate(-50 % , -50 % );
 		}
-
+  #test {
+     width: 600px;
+     height:400px;
+     margin: 0px auto;
+     border: 1px solid red;
+   }
 		#canvas:focus {
 			outline: none;
 		}
@@ -123,10 +122,12 @@
 
 </head>
 <body>
+	<div id="test">
 	<canvas id='canvas'>
 		HTML5 canvas appears to be unsupported in the current browser.<br />
 		Please try updating or use a different browser.
 	</canvas>
+	</div>
 	<div id='status'>
 		<div id='status-progress' style='display: none;' oncontextmenu='event.preventDefault();'><div id ='status-progress-inner'></div></div>
 		<div id='status-indeterminate' style='display: none;' oncontextmenu='event.preventDefault();'>

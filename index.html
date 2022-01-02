@@ -14,10 +14,10 @@
 			border: 0 none;
 			padding: 0;
 			text-align: center;
-			background-color: black;
+			background-color: grey;
 		}
 
-		#canvas {
+		#centering-div {
 			position: absolute;
 			margin: 0;
 			left: 0;
@@ -122,10 +122,12 @@
 
 </head>
 <body>
+	<div id='centering-div'>
 	<canvas id='canvas'>
 		HTML5 canvas appears to be unsupported in the current browser.<br />
 		Please try updating or use a different browser.
 	</canvas>
+	</div>
 	<div id='status'>
 		<div id='status-progress' style='display: none;' oncontextmenu='event.preventDefault();'><div id ='status-progress-inner'></div></div>
 		<div id='status-indeterminate' style='display: none;' oncontextmenu='event.preventDefault();'>

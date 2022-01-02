@@ -10,7 +10,7 @@
 
 		body {
 			touch-action: none;
-			margin: 0 auto;
+			margin: 0;
 			border: 0 none;
 			padding: 0;
 			text-align: center;
@@ -40,6 +40,18 @@
 		 * ============== */
 
 		#status {
+			position: absolute;
+			left: 0;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			/* don't consume click events - make children visible explicitly */
+			visibility: hidden;
+		}
+		#center-div {
 			position: absolute;
 			left: 0;
 			top: 0;
@@ -115,10 +127,12 @@
 
 </head>
 <body>
+		<div id='center-div'>
 	<canvas id='canvas'>
 		HTML5 canvas appears to be unsupported in the current browser.<br />
 		Please try updating or use a different browser.
 	</canvas>
+	</div>
 	<div id='status'>
 		<div id='status-progress' style='display: none;' oncontextmenu='event.preventDefault();'><div id ='status-progress-inner'></div></div>
 		<div id='status-indeterminate' style='display: none;' oncontextmenu='event.preventDefault();'>

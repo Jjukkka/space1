@@ -17,16 +17,12 @@
 		}
 
 		#canvas {
-			position: absolute;
-			margin: 0;
-			left: 0;
-			top: 0;
-			right: 0;
-			bottom: 0;
-			display: flex;
-			justify-content: center;
-			align-items: center;
 		}
+		    #wrapper { 
+    	display: flex; 
+    	justify-content: center; /* center horizontally */ 
+    	align-items: center; /* center vertically */ 
+    } 
 
 		#canvas:focus {
 			outline: none;
@@ -121,10 +117,12 @@
 
 </head>
 <body>
+	<div id="wrapper"> 
 	<canvas id='canvas'>
 		HTML5 canvas appears to be unsupported in the current browser.<br />
 		Please try updating or use a different browser.
 	</canvas>
+		</div> 
 	<div id='status'>
 		<div id='status-progress' style='display: none;' oncontextmenu='event.preventDefault();'><div id ='status-progress-inner'></div></div>
 		<div id='status-indeterminate' style='display: none;' oncontextmenu='event.preventDefault();'>

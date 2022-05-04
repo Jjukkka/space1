@@ -1,0 +1,13 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: Arial, Helvetica, "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  background-color: rgb(100, 100, 100);
+  color: rgb(255,255,255);
+}
+
+.marginauto {
+    margin: 20px auto 20px;
+    display: block;
+}

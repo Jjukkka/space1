@@ -116,7 +116,16 @@
 
 </head>
 <body>
-	<canvas id='canvas'>
+  <script>
+if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+	window.location.href = "https://laatikko.site/mobile";
+}
+else
+ {
+ }
+  </script>
+	  
+	 	<canvas id='canvas'>
 		HTML5 canvas appears to be unsupported in the current browser.<br />
 		Please try updating or use a different browser.
 	</canvas>
@@ -134,13 +143,6 @@
 		</div>
 		<div id='status-notice' class='godot' style='display: none;'></div>
 	</div>
-  <script>
-if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-	<p style="color:#FFFFFF;">No mobile support yet</p>
-	window.stop()
-}
-else
- {
 	 <script type='text/javascript' src='index.js'></script>
 	<script type='text/javascript'>//<![CDATA[
 
@@ -248,8 +250,6 @@ else
 			}
 		})();
 	//]]></script>
- }
-	  </script>
 
 
 </body>

@@ -120,6 +120,7 @@
 if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
 	<p style="color:#FFFFFF;">No mobile support yet</p>
 	window.stop()
+	throw "No mobile support."
 }
 else
  {

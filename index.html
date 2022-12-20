@@ -116,17 +116,7 @@
 
 </head>
 <body>
-  <script>
-if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-	<p style="color:#FFFFFF;">No mobile support yet</p>
-	window.stop()
-	throw "No mobile support."
-}
-else
- {
- }
-	  </script>
-<canvas id='canvas'>
+	<canvas id='canvas'>
 		HTML5 canvas appears to be unsupported in the current browser.<br />
 		Please try updating or use a different browser.
 	</canvas>
@@ -144,8 +134,14 @@ else
 		</div>
 		<div id='status-notice' class='godot' style='display: none;'></div>
 	</div>
-
-	<script type='text/javascript' src='index.js'></script>
+  <script>
+if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+	<p style="color:#FFFFFF;">No mobile support yet</p>
+	window.stop()
+}
+else
+ {
+	 <script type='text/javascript' src='index.js'></script>
 	<script type='text/javascript'>//<![CDATA[
 
 		const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"executable":"index","experimentalVK":false,"fileSizes":{"index.pck":89280,"index.wasm":13342674},"focusCanvas":true,"gdnativeLibs":[]};
@@ -252,6 +248,9 @@ else
 			}
 		})();
 	//]]></script>
+ }
+	  </script>
+
 
 </body>
 </html>
